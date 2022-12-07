@@ -33,7 +33,7 @@ const config = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader,'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
 
       // Add your rules for custom modules here
