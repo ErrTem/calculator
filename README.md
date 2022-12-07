@@ -1,15 +1,10 @@
-# 🚀 Welcome to your new awesome project!
+# 🐣 Welcome to my calculator!
 
-This project has been created using **webpack-cli**, you can now run
+[Task](./Innowise%20Lab%20Internship_%20Level%200_%20Simple%20calculator.pdf)
 
-```
+How to run the app: make sure npm installed on your pc, write in console:
+
 npm run build
-```
 
-or
+you can find bundled application in dist folder
 
-```
-yarn build
-```
-
-to bundle your application
