@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(150px, 200px) repeat(5, 80px);
+  border-radius: 30px;
+}
+
+.calculator-grid > button {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 1px solid #535353;
+  outline: none;
+  /* background-color: #7d7d7d; */
+}
+
+.dark-gray {
+  background-color: #646464;
+}
+.orange {
+  background-color: #ff9f0a;
+}
+.simple {
+  background-color: #7d7d7d;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.size-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: #535353;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 4rem;
+}
