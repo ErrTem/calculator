@@ -4,7 +4,10 @@
 
 How to run the app: make sure npm installed on your pc, write in console:
 
+npm install
 npm run build
 
 you can find bundled application in dist folder
+
+
 
